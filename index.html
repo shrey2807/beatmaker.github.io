@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beat-Maker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Beat-Maker</h1>
+    </header>
+    <div class="sequences">
+        <div class="sequence kick-track">
+            <div class="first-half">
+                <h1>Kick Classic</h1>
+                <button data-track="0" class="mute">
+                    <i class="fas fa-volume-mute mute-btn"></i>
+                </button>
+                <select name="kick-select" id="kick-select" class="options">
+                    <option value="./sounds/kick-classic.wav">kick Classic</option>
+                    <option value="./sounds/kick-heavy.wav">kick Heavy</option>
+                    <option value="./sounds/kick-softy.wav">kick Softy</option>
+                    <option value="./sounds/kick-808.wav">kick 808</option>
+                </select>
+            </div>
+            <div class="second-half">
+                <div class="notes">
+                    <div class="note kick-note n0"></div>
+                    <div class="note kick-note n1"></div>
+                    <div class="note kick-note n2"></div>
+                    <div class="note kick-note n3"></div>
+                    <div class="note kick-note n4"></div>
+                    <div class="note kick-note n5"></div>
+                    <div class="note kick-note n6"></div>
+                    <div class="note kick-note n7"></div>
+                    <div class="note kick-note n8"></div>
+                    <div class="note kick-note n9"></div>
+                </div>
+            </div>
+        </div>
+        <div class="sequence kick-track">
+            <div class="first-half">
+                <h1>Snare 808</h1>
+                <button data-track="0" class="mute">
+                    <i class="fas fa-volume-mute mute-btn"></i>
+                </button>
+                <select name="snare-select" id="snare-select" class="options">
+                    <option value="./sounds/snare-808.wav">Snare 808</option>
+                    <option value="./sounds/snare-acoustic.wav">Snare Acoustic</option>
+                    <option value="./sounds/snare-vinyl02.wav">Snare Vinyl</option>
+                </select>
+            </div>
+            <div class="second-half">
+                <div class="notes">
+                    <div class="note snare-note n0"></div>
+                    <div class="note snare-note n1"></div>
+                    <div class="note snare-note n2"></div>
+                    <div class="note snare-note n3"></div>
+                    <div class="note snare-note n4"></div>
+                    <div class="note snare-note n5"></div>
+                    <div class="note snare-note n6"></div>
+                    <div class="note snare-note n7"></div>
+                    <div class="note snare-note n8"></div>
+                    <div class="note snare-note n9"></div>
+                </div>
+            </div>
+        </div>
+        <div class="sequence kick-track">
+            <div class="first-half">
+                <h1>Hihat 808</h1>
+                <button data-track="0" class="mute">
+                    <i class="fas fa-volume-mute mute-btn"></i>
+                </button>
+                <select name="hihat-select" id="hihat-select" class="options">
+                    <option value="./sounds/hihat-808.wav">Hihat 808</option>
+                    <option value="./sounds/hihat-acoustic01.wav">Hihat Acoustic</option>
+                </select>
+            </div>
+            <div class="second-half">
+                <div class="notes">
+                    <div class="note hihat-note n0"></div>
+                    <div class="note hihat-note n1"></div>
+                    <div class="note hihat-note n2"></div>
+                    <div class="note hihat-note n3"></div>
+                    <div class="note hihat-note n4"></div>
+                    <div class="note hihat-note n5"></div>
+                    <div class="note hihat-note n6"></div>
+                    <div class="note hihat-note n7"></div>
+                    <div class="note hihat-note n8"></div>
+                    <div class="note hihat-note n9"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="play">
+        <button class="playBtn">Play</button>
+    </div>
+
+    <audio src="./sounds/kick-classic.wav" class="kick-audio"></audio>
+    <audio src="./sounds/snare-808.wav" class="snare-audio"></audio>
+    <audio src="./sounds/hihat-808.wav" class="hihat-audio"></audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+        integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

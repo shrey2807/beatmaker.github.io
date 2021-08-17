@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    padding-top: 1.7rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.sequence{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.sequence h1 {
+    flex: 1;
+}
+
+.first-half{
+    display: flex;
+    min-width: 40%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mute {
+    margin-right: 2rem;
+    padding: 0.8rem;
+    border: none;
+    background-color: rgb(192, 192, 192);
+    color: rgb(22, 22, 22);
+    cursor: pointer;
+}
+
+.mute-btn{
+    pointer-events: none;
+}
+
+.options {
+    padding: 0.65rem 0.85rem;
+}
+
+.notes{
+    display: flex;
+}
+
+.note {
+    cursor: pointer;
+    height: 3.3rem;
+    width: 3.3rem;
+    margin: 0.75rem;
+}
+
+.kick-note{
+    background-color: rgb(192, 158, 221);
+    transition: 0.3s;
+}
+.snare-note{
+    background-color: rgb(219, 161, 178);
+    transition: 0.3s;
+}
+.hihat-note{
+    background-color: rgb(181, 221, 226);
+    transition: 0.3s;
+}
+
+.kick-selected {
+    background-color: rgb(132, 48, 206);;
+}
+.snare-selected {
+    background-color: rgb(219, 56, 105);;
+}
+.hihat-selected {
+    background-color: rgb(48, 214, 236);
+}
+
+
+.play{
+    text-align: center;
+}
+
+.play button {
+    padding: 0.65rem 2.2rem;
+    font-size: 1.2rem;
+    margin-top: 5rem;
+    background-color: rgb(192, 192, 192);
+    color: rgb(22, 22, 22);;
+    border: none;
+    cursor: pointer;
+}
+
+.isMuted {
+    opacity: 0.5;
+}
+
+@keyframes playing {
+    from{}
+    to{transform: scale(1.3);}
+}
