@@ -75,9 +75,11 @@ class Drumkit {
 
     tempo() {
         document.querySelector('.bpm').innerText = `BPM: ${this.slider.value}`;
-        clearInterval(this.isPlaying);
-        this.isPlaying = null;
-        this.start();
+        if (this.isPlaying) {
+            clearInterval(this.isPlaying);
+            this.isPlaying = null;
+            this.start();
+        }
     }
 }
 
