@@ -18,11 +18,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 4rem;
-}
-
-.sequence h1 {
-    flex: 1;
+    margin-top: 1.5rem;
 }
 
 .first-half{
@@ -33,7 +29,6 @@ header {
 }
 
 .mute {
-    margin-right: 2rem;
     padding: 0.8rem;
     border: none;
     background-color: rgb(192, 192, 192);
@@ -69,7 +64,17 @@ header {
     transition: 0.3s;
 }
 .hihat-note{
+    background-color: rgb(159, 181, 223);
+    transition: 0.3s;
+}
+
+.sound1{
     background-color: rgb(181, 221, 226);
+    transition: 0.3s;
+}
+
+.sound2 {
+    background-color: rgb(182, 229, 213);
     transition: 0.3s;
 }
 
@@ -80,7 +85,15 @@ header {
     background-color: rgb(219, 56, 105);;
 }
 .hihat-selected {
-    background-color: rgb(48, 214, 236);
+    background-color: rgb(57, 110, 209);
+}
+
+.s1selected{
+    background-color: rgb(67, 203, 221);
+}
+
+.s2selected {
+    background-color: rgb(54, 224, 156);
 }
 
 
@@ -91,7 +104,7 @@ header {
 .play button {
     padding: 0.65rem 2.2rem;
     font-size: 1.2rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
     background-color: rgb(192, 192, 192);
     color: rgb(22, 22, 22);;
     border: none;
@@ -106,3 +119,45 @@ header {
     from{}
     to{transform: scale(1.3);}
 }
+
+.slidercontainer{
+    text-align: center;
+}
+
+.slidercontainer span{
+    margin: 10px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 40%;
+    height: 15px;
+    background: #e9e9e9;
+    outline: none;
+    opacity: 0.85;
+    margin-top: 3rem;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 1rem;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #494949;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #494949;
+    cursor: pointer;
+  }
